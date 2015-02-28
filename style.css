@@ -1,0 +1,96 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0;}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background:#636b84;
+    font-size:24px;
+}
+.overlay{
+    position:fixed;
+    z-index:98;
+    height:100%;
+    width:100%;
+    left:0px;
+    top:0;
+    opacity:.8;
+    background:#000;
+    display:none;
+}
+.menu {
+    position:fixed;
+    z-index:99;
+    height:100%;
+    width:30%;
+    left:0px;
+    top:0;
+    overflow:hidden;
+}
+.menu-inner{
+    display:none;
+}
+.menu .bg{
+    position:absolute;
+    left:0;
+}
+.menu.open,
+.menu.touch {
+    width:70%;
+    background:transparent;
+    opacity:1
+}
+.info {
+    background:#000;
+    color:#fff;
+    font-size:14px;
+    padding:30px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    text-transform:uppercase;
+}
+
+.content h1{
+    background:#443957;
+    color:#fff;
+    text-align:center;
+    text-transform:uppercase;
+    height:80px;
+    line-height:80px;
+    font-weight:700;
+    width:100%;
+    z-index:50;
+    position:fixed;
+}
+.chat-list {
+    width:100%;
+    overflow:hidden;
+    padding-top:80px;
+}
+.chat-list li {
+    background:#fff;
+    overflow:hidden;
+    clear:bold;
+}
+.chat-list li .avatar{
+    float:left;
+    border-right:10px #1cc6ae solid;
+    margin-right:40px;
+}
+.chat-list li .avatar img{
+    height:100%;
+    display:block;
+}
+.chat-list li .message{
+    padding:40px;
+}
+.chat-list li .name{
+    font-size:32px;
+    color:#ccc;
+    text-transform:uppercase;
+    font-weight:700;
+    margin-bottom:20px;
+}
+.chat-list li .response{
+    color:#151317;
+}
+
