@@ -54,11 +54,13 @@ $(document).ready(function(){
           }
           if(phase=="move" && !$('.menu').hasClass('open') ){
             if(event.type == 'touchmove'){
+                mouseX = event.touches[0].clientX;
                 mouseY = event.touches[0].clientY;
             }else{
+                mouseX = event.x;
                 mouseY = event.y;
             }
-            decX = parseInt( distance/ menuW *100 );
+            decX = parseInt( mouseX/ menuW *100 );
             decY = parseInt( mouseY / menuH *100 );
 
             newPath = 'M0,0C0,0,0,'+menuH+',0,'+menuH+'C0,'+menuH+',0,'+menuH+',0,'+menuH+'C'+ (menuW*decX/100) +','+(menuH*(decY-20)/100)+','+(menuW*decX/100)+','+(menuH*(decY+20)/100)+',0 0C0,0,0,0,0,0C0,0,0,0,0,0';
