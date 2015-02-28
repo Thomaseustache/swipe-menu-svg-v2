@@ -31,6 +31,7 @@ $(document).ready(function(){
         $('.overlay').fadeOut(300,function(){
             $('.overlay').remove();
         });
+        $('html, body').css({'overflow':'auto'});
         pathEl.stop().animate( { 'path' : newPath }, 600, mina.elastic,function(){
             $('.menu').removeClass('touch open'); 
         });
